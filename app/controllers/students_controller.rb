@@ -1,4 +1,3 @@
-require "pry"
 class StudentsController < ApplicationController
   def index
     render json: Student.all.as_json( only: [:id, :fullName, :is_present, :email])
