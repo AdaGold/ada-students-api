@@ -1,24 +1,22 @@
-# README
+# Ada Students API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The following program is an Rails application designed to produce a simple RESTful API for student data.
 
-Things you may want to cover:
+## Routes
 
-* Ruby version
+This api supports the following routes
 
-* System dependencies
+- `get` `/students` - Lists all students in the system
+- `get` `/students/:id` - Lists a specific student with the given id
+- `delete` `/students/:id` - Deletes the student with the matching id
+- `patch` `/students/:id` - Updates a student with the following information in the request body.
+    - `fullName` - string, required
+    - `is_present` - boolean
+    - `email` - string, required, must be unique
+- `post` `/students` - creates a student with the given information in the request body
+    - `fullName` - string, required
+    - `is_present` - boolean
+    - `email` - string, required, must be unique
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This basic API is designed to support the [ada students](https://github.com/AdaGold/ada-students) livecode.
