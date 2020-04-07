@@ -1,0 +1,15 @@
+ada:
+  id: 1
+  fullName: Ada Lovelace
+  is_present: true
+  email: ada@lovelace.dev
+grace:
+  id: 2
+  fullName: Grace Hopper
+  is_present: true
+  email: grace@navy.mil
+mae:
+  id: 3
+  fullName: Mae C Jemison
+  is_present: false
+  email: mae@nasa.gov
